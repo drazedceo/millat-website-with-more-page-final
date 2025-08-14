@@ -16,7 +16,7 @@ const Card: React.FC<CardProps> = ({
   imageAlt = ""
 }) => {
   return (
-    <div className={`bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 ${className}`}>
+    <div className={`bg-gray-300 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 ${className}`}>
       {image && (
         <div className="aspect-video overflow-hidden">
           <img

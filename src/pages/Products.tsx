@@ -517,7 +517,7 @@ const Products = () => {
           className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto"
         >
           <h1 className="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
-            Our Industrial <span className="text-primary">Product</span> Range
+            Our Industrial <span className="text-gray-300">Product</span> Range
           </h1>
           <p className="text-xl lg:text-2xl opacity-90 leading-relaxed">
             Browse our extensive catalog of engineered components
@@ -534,7 +534,7 @@ const Products = () => {
           backgroundPosition: 'center'
         }}
       >
-        <div className="absolute inset-0 bg-white/95" />
+        <div className="absolute inset-0 bg-gray-300/95" />
         <div className="relative z-10 container mx-auto px-4">
           {/* Search and Filter Controls */}
           <motion.div 
@@ -551,7 +551,7 @@ const Products = () => {
                   placeholder="Search products..."
                   value={searchTerm}
                   onChange={(e) => setSearchTerm(e.target.value)}
-                  className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-300 hover:shadow-md"
+                  className="w-full pl-10 pr-4 py-3 border border-gray-400 rounded-lg focus:ring-2 focus:ring-blue-800 focus:border-transparent transition-all duration-300 hover:shadow-md bg-gray-200"
                 />
               </div>
               <div className="relative">
@@ -559,7 +559,7 @@ const Products = () => {
                 <select
                   value={filterIndustry}
                   onChange={(e) => setFilterIndustry(e.target.value)}
-                  className="pl-10 pr-8 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent appearance-none bg-white min-w-[200px] transition-all duration-300 hover:shadow-md"
+                  className="pl-10 pr-8 py-3 border border-gray-400 rounded-lg focus:ring-2 focus:ring-blue-800 focus:border-transparent appearance-none bg-gray-200 min-w-[200px] transition-all duration-300 hover:shadow-md"
                 >
                   <option>All Applications</option>
                   <option>Automotive</option>
@@ -607,7 +607,7 @@ const Products = () => {
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}
                       transition={{ duration: 0.3, ease: "easeInOut" }}
-                      className="bg-white overflow-hidden"
+                      className="bg-gray-300 overflow-hidden"
                     >
                       <div className="p-6 space-y-8">
                         {category.products.map((product, productIndex) => (
@@ -625,7 +625,7 @@ const Products = () => {
                             }}
                             className={`${productIndex % 2 === 0 ? 'slide-in-left' : 'slide-in-right'} flex flex-col lg:flex-row ${
                               productIndex % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-                            } items-center gap-8 bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2`}
+                            } items-center gap-8 bg-gray-300 rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2`}
                           >
                             <div className="lg:w-1/2">
                               <img
@@ -635,7 +635,7 @@ const Products = () => {
                               />
                             </div>
                             <div className="lg:w-1/2 p-8">
-                              <h3 className="text-2xl font-bold mb-4 text-gray-900 hover:text-primary transition-colors duration-300">
+                              <h3 className="text-2xl font-bold mb-4 text-gray-900 hover:text-blue-800 transition-colors duration-300">
                                 {product.name}
                               </h3>
                               <p className="text-gray-600 mb-6 leading-relaxed">
@@ -667,7 +667,7 @@ const Products = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
         viewport={{ once: true }}
-        className="section-padding bg-millat-teal text-white"
+        className="section-padding bg-blue-800 text-gray-300"
       >
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
@@ -679,7 +679,7 @@ const Products = () => {
             </p>
             <Link 
               to="/get-in-touch" 
-              className="bg-white text-primary hover:bg-gray-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-block"
+              className="bg-gray-300 text-blue-800 hover:bg-gray-200 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-block"
             >
               Request Custom Part
             </Link>

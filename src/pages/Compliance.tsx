@@ -65,19 +65,19 @@ const Compliance = () => {
       {/* Hero Banner */}
       <HeroBanner
         backgroundImage="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1920&h=1080&fit=crop"
-        title="<span class='text-primary'>Compliance</span>"
+        title="<span class='text-gray-300'>Compliance</span>"
         subtitle="Global standards, responsible manufacturing"
       />
 
       {/* Overview */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-gray-300">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Our Commitment to <span className="text-primary">Excellence</span>
+              Our Commitment to <span className="text-blue-800">Excellence</span>
             </h2>
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              At Millat Polymer & Rubber (Pvt) Ltd, compliance means more than ticking boxes—it’s about building trust.  
+              At Millat Polymer & Rubber (Pvt) Ltd, compliance means more than ticking boxes—it's about building trust.  
               We integrate quality, environmental care, and safety into every layer of our operations to meet and exceed the demands of global markets.
             </p>
             <p className="text-lg text-gray-600 leading-relaxed">
@@ -88,7 +88,7 @@ const Compliance = () => {
       </section>
 
       {/* Compliance Areas Grid */}
-      <section className="section-padding bg-light">
+      <section className="section-padding bg-gray-200">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
             <div className="slide-in-left">
@@ -115,7 +115,7 @@ const Compliance = () => {
           </div>
           <div className="text-center mb-16 scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Compliance <span className="text-primary">Areas</span>
+              Compliance <span className="text-blue-800">Areas</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Our integrated compliance framework spans product quality, material safety, environmental responsibility, and workplace health.
@@ -130,14 +130,14 @@ const Compliance = () => {
                 className={`${index % 3 === 0 ? 'slide-in-left' : index % 3 === 1 ? 'scale-in' : 'slide-in-right'} group`}
               >
                 <Card className="h-full lift-hover group-hover:shadow-xl transition-all duration-300">
-                  <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300">
+                  <div className="bg-blue-800/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 text-blue-800 group-hover:bg-blue-800 group-hover:text-gray-300 transition-all duration-300">
                     {area.icon}
                   </div>
-                  <h3 className="text-xl font-semibold mb-4 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-semibold mb-4 group-hover:text-blue-800 transition-colors">
                     {area.title}
                   </h3>
                   <p className="text-gray-600 leading-relaxed mb-4">{area.description}</p>
-                  <div className="flex items-center text-primary font-medium">
+                  <div className="flex items-center text-blue-800 font-medium">
                     <span>Learn More</span>
                     <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-2 transition-transform" />
                   </div>
@@ -149,11 +149,11 @@ const Compliance = () => {
       </section>
 
       {/* Certifications Showcase */}
-      <section className="section-padding bg-white">
+      <section className="section-padding bg-gray-300">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Our <span className="text-primary">Certifications</span>
+              Our <span className="text-blue-800">Certifications</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Globally recognized certifications that reinforce our role as a reliable and compliant manufacturing partner.
@@ -166,7 +166,7 @@ const Compliance = () => {
                 key={index}
                 className={`${index % 2 === 0 ? 'slide-in-left' : 'slide-in-right'} text-center lift-hover`}
               >
-                <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 text-primary">
+                <div className="bg-blue-800/10 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 text-blue-800">
                   <Award className="h-8 w-8" />
                 </div>
                 <h3 className="text-lg font-bold mb-2">{cert.name}</h3>
@@ -178,30 +178,30 @@ const Compliance = () => {
       </section>
 
       {/* Compliance Benefits */}
-      <section className="section-padding bg-light">
+      <section className="section-padding bg-gray-200">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Benefits of Our <span className="text-primary">Compliance</span>
+              Benefits of Our <span className="text-blue-800">Compliance</span>
             </h2>
-            <div className="bg-white p-8 rounded-2xl shadow-lg">
+            <div className="bg-gray-300 p-8 rounded-2xl shadow-lg">
               <div className="grid md:grid-cols-2 gap-8 text-left">
                 <div>
-                  <h3 className="text-xl font-semibold mb-4 text-primary">For Our Customers</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-blue-800">For Our Customers</h3>
                   <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Consistent product quality</li>
-                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Regulatory compliance for exports</li>
-                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Reduced supply chain risks</li>
-                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Access to OEM and global markets</li>
+                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-blue-800 mr-2" />Consistent product quality</li>
+                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-blue-800 mr-2" />Regulatory compliance for exports</li>
+                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-blue-800 mr-2" />Reduced supply chain risks</li>
+                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-blue-800 mr-2" />Access to OEM and global markets</li>
                   </ul>
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold mb-4 text-primary">For Our Operations</h3>
+                  <h3 className="text-xl font-semibold mb-4 text-blue-800">For Our Operations</h3>
                   <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Continuous improvement culture</li>
-                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Efficiency in production workflows</li>
-                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Workplace safety leadership</li>
-                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-primary mr-2" />Environmental stewardship</li>
+                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-blue-800 mr-2" />Continuous improvement culture</li>
+                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-blue-800 mr-2" />Efficiency in production workflows</li>
+                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-blue-800 mr-2" />Workplace safety leadership</li>
+                    <li className="flex items-center"><CheckCircle className="h-5 w-5 text-blue-800 mr-2" />Environmental stewardship</li>
                   </ul>
                 </div>
               </div>
@@ -211,7 +211,7 @@ const Compliance = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="section-padding bg-millat-teal text-white">
+      <section className="section-padding bg-blue-800 text-gray-300">
         <div className="container mx-auto px-4 text-center">
           <div className="scale-in max-w-3xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
@@ -222,7 +222,7 @@ const Compliance = () => {
             </p>
             <Link 
               to="/contact" 
-              className="bg-white text-primary hover:bg-gray-50 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center space-x-2"
+              className="bg-gray-300 text-blue-800 hover:bg-gray-200 px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg inline-flex items-center space-x-2"
             >
               <span>Contact Us</span>
               <ArrowRight className="h-5 w-5" />

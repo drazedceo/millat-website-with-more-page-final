@@ -43,7 +43,7 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-gray-300">
         <Header />
         <AnimatePresence mode="wait">
           <main>

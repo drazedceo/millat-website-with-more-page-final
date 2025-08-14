@@ -81,13 +81,13 @@ const Industries = () => {
       {/* Hero Banner */}
       <HeroBanner
         backgroundImage="https://bistaterubber.com/wp-content/uploads/2023/07/Industrial-Rubber-Products-Fueling-Innovation-in-Varied-Industries-1200x675.jpg"
-        title="Industries We <span class='text-primary'>Serve</span>"
+        title="Industries We <span class='text-gray-300'>Serve</span>"
         subtitle="Driving Excellence Across Sectors with Reliable Polymer & Rubber Solutions."
       />
 
       {/* Industries Grid */}
       <section 
-        className="section-padding bg-white"
+        className="section-padding bg-gray-300"
       >
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -100,7 +100,7 @@ const Industries = () => {
               >
                 <div className="flex items-center space-x-3 mb-4">
                   <div className="text-3xl">{industry.icon}</div>
-                  <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-semibold group-hover:text-blue-800 transition-colors">
                     {industry.title}
                   </h3>
                 </div>
