@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-  --millat-teal: #00B9B3;
-  --millat-teal-hsl: hsl(180, 100%, 36%);
-  --signal-orange: #FF6F3C;
+  --primary-navy: #0A2342;
+  --primary-navy-hsl: hsl(213, 74%, 15%);
+  --accent-grey: #6E6E6E;
   --graphite-gray: #2C2C2C;
-  --white: #FFFFFF;
+  --cool-silver: #C0C0C0;
   --light-gray-smoke: #F6F7F9;
   --border-light: #E5E7EB;
 }
@@ -49,8 +49,8 @@ body {
 }
 
 .btn-primary {
-  background-color: var(--millat-teal);
-  color: white;
+  background-color: var(--primary-navy);
+  color: var(--cool-silver);
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   font-weight: 500;
@@ -62,14 +62,14 @@ body {
 }
 
 .btn-primary:hover {
-  background-color: #009a94;
+  background-color: #081a33;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 185, 179, 0.3);
+  box-shadow: 0 4px 12px rgba(10, 35, 66, 0.3);
 }
 
 .btn-secondary {
-  background-color: var(--signal-orange);
-  color: white;
+  background-color: var(--accent-grey);
+  color: var(--cool-silver);
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
   font-weight: 500;
@@ -81,25 +81,25 @@ body {
 }
 
 .btn-secondary:hover {
-  background-color: #e55a2b;
+  background-color: #555555;
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 111, 60, 0.3);
+  box-shadow: 0 4px 12px rgba(110, 110, 110, 0.3);
 }
 
 .text-primary {
-  color: var(--millat-teal);
+  color: var(--primary-navy);
 }
 
 .text-secondary {
-  color: var(--signal-orange);
+  color: var(--accent-grey);
 }
 
 .bg-light {
   background-color: var(--light-gray-smoke);
 }
 
-.bg-millat-teal {
-  background-color: var(--millat-teal-hsl);
+.bg-primary-navy {
+  background-color: var(--primary-navy-hsl);
 }
 
 .bg-footer {
@@ -332,4 +332,4 @@ body {
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;
-} 
+}
