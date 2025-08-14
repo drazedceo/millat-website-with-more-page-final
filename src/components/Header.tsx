@@ -75,7 +75,7 @@ const Header = () => {
   return (
     <header
       className={`sticky top-0 z-50 h-20 transition-all duration-300 ${
-        isScrolled ? 'bg-white shadow-lg' : 'bg-white shadow-sm'
+        isScrolled ? 'bg-gray-300 shadow-lg' : 'bg-gray-300 shadow-sm'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 h-full flex items-center justify-between py-4">
@@ -100,8 +100,8 @@ const Header = () => {
                       className={`relative px-3 xl:px-4 py-3 whitespace-nowrap transition-all duration-200 flex items-center ${
                         location.pathname === link.href ||
                         (link.dropdown && link.dropdown.some(item => location.pathname === item.href))
-                          ? 'text-[#00B9B3] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-[#00B9B3]'
-                          : 'hover:text-[#00B9B3]'
+                          ? 'text-[#1e3a8a] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-[#1e3a8a]'
+                          : 'hover:text-[#1e3a8a]'
                       }`}
                     >
                       {link.name}
@@ -113,7 +113,7 @@ const Header = () => {
                           <Link
                             key={item.name}
                             to={item.href}
-                            className="block px-5 py-3 text-gray-700 hover:bg-gray-50 hover:text-[#00B9B3] transition-colors text-sm font-medium"
+                            className="block px-5 py-3 text-gray-700 hover:bg-gray-200 hover:text-[#1e3a8a] transition-colors text-sm font-medium"
                           >
                             {item.name}
                           </Link>
@@ -126,8 +126,8 @@ const Header = () => {
                     to={link.href}
                     className={`relative px-3 xl:px-4 py-3 whitespace-nowrap transition-all duration-200 ${
                       location.pathname === link.href
-                        ? 'text-[#00B9B3] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-[#00B9B3]'
-                        : 'hover:text-[#00B9B3]'
+                        ? 'text-[#1e3a8a] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-[#1e3a8a]'
+                        : 'hover:text-[#1e3a8a]'
                     }`}
                   >
                     {link.name}
@@ -141,7 +141,7 @@ const Header = () => {
         {/* Desktop CTA */}
         <Link
           to="/contact"
-          className="hidden lg:inline-block bg-[#FF6F3C] text-white px-8 py-2 rounded-full shadow-md hover:bg-opacity-90 transition-all duration-200 font-semibold text-sm"
+          className="hidden lg:inline-block bg-[#6b7280] text-gray-300 px-8 py-2 rounded-full shadow-md hover:bg-opacity-90 transition-all duration-200 font-semibold text-sm"
         >
           get in<br />touch
         </Link>
@@ -149,7 +149,7 @@ const Header = () => {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="lg:hidden p-2 text-gray-700 hover:text-[#00B9B3] transition-colors"
+          className="lg:hidden p-2 text-gray-700 hover:text-[#1e3a8a] transition-colors"
           aria-label="Toggle menu"
         >
           {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -158,7 +158,7 @@ const Header = () => {
 
       {/* Mobile Drawer */}
       <div
-        className={`lg:hidden fixed top-0 right-0 h-full w-80 bg-white shadow-2xl transform transition-transform duration-300 ease-in-out z-50 ${
+        className={`lg:hidden fixed top-0 right-0 h-full w-80 bg-gray-300 shadow-2xl transform transition-transform duration-300 ease-in-out z-50 ${
           isMenuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -172,7 +172,7 @@ const Header = () => {
             />
             <button
               onClick={() => setIsMenuOpen(false)}
-              className="p-2 text-gray-700 hover:text-[#00B9B3] transition-colors"
+              className="p-2 text-gray-700 hover:text-[#1e3a8a] transition-colors"
               aria-label="Close menu"
             >
               <X className="h-6 w-6" />
@@ -190,8 +190,8 @@ const Header = () => {
                       className={`flex items-center justify-between w-full text-base font-semibold transition-colors py-2.5 border-b border-gray-100 tracking-wide ${
                         location.pathname === link.href ||
                         link.dropdown.some(item => location.pathname === item.href)
-                          ? 'text-[#00B9B3]'
-                          : 'text-gray-700 hover:text-[#00B9B3]'
+                          ? 'text-[#1e3a8a]'
+                          : 'text-gray-700 hover:text-[#1e3a8a]'
                       }`}
                       onClick={() => setIsMenuOpen(false)}
                     >
@@ -201,7 +201,7 @@ const Header = () => {
                       <Link
                         key={item.name}
                         to={item.href}
-                        className="block pl-4 py-2 text-gray-700 hover:text-[#00B9B3] text-sm"
+                        className="block pl-4 py-2 text-gray-700 hover:text-[#1e3a8a] text-sm"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         {item.name}
@@ -213,8 +213,8 @@ const Header = () => {
                     to={link.href}
                     className={`relative px-2 xl:px-2.5 py-2 whitespace-nowrap transition-all duration-200 ${
                       location.pathname === link.href
-                        ? 'text-[#00B9B3] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-[#00B9B3]'
-                        : 'hover:text-[#00B9B3]'
+                        ? 'text-[#1e3a8a] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[2px] after:bg-[#1e3a8a]'
+                        : 'hover:text-[#1e3a8a]'
                     }`}
                     onClick={() => setIsMenuOpen(false)}
                   >
@@ -228,7 +228,7 @@ const Header = () => {
           {/* Mobile CTA - wider & flatter */}
           <Link
             to="/contact"
-            className="bg-[#FF6F3C] text-white px-6 py-2 rounded-lg shadow-md hover:bg-opacity-90 transition-all duration-200 font-medium inline-block mt-4 mx-4 text-center text-sm"
+            className="bg-[#6b7280] text-gray-300 px-6 py-2 rounded-lg shadow-md hover:bg-opacity-90 transition-all duration-200 font-medium inline-block mt-4 mx-4 text-center text-sm"
             onClick={() => setIsMenuOpen(false)}
           >
             Get in Touch

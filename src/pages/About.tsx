@@ -20,19 +20,19 @@ const About = () => {
       {/* Hero Banner */}
       <HeroBanner
         videoUrl="/videos/about-hero.mp4"
-        title="About <span class='text-primary'>Millat Polymer</span> Industries"
+        title="About <span class='text-gray-300'>Millat Polymer</span> Industries"
         subtitle="Founded in 2021, we are a leading manufacturer and exporter of high-quality polymer products, driven by a mission to deliver excellence and innovation in every component we produce."
       />
 
       {/* A Message from Our Chairman */}
       <section 
-        className="section-padding bg-white"
+        className="section-padding bg-gray-300"
       >
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="slide-in-left">
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-                A Message from Our <span className="text-primary">Chairman</span>
+                A Message from Our <span className="text-blue-800">Chairman</span>
               </h2>
               <div className="space-y-6 text-gray-700 text-lg leading-relaxed">
                 <p>
@@ -42,7 +42,7 @@ const About = () => {
                   We believe in building lasting partnerships, and that begins with delivering products that you can rely on. Thank you for considering Millat Polymer as your trusted manufacturing partner.
                 </p>
                 <div className="mt-8">
-                  <div className="bg-white/90 backdrop-blur-sm p-4 rounded-xl text-center shadow-lg lift-hover">
+                  <div className="bg-gray-300/90 backdrop-blur-sm p-4 rounded-xl text-center shadow-lg lift-hover">
                     <p className="text-gray-600">Chairman & Founder, Millat Polymer Industries</p>
                   </div>
                 </div>
@@ -61,7 +61,7 @@ const About = () => {
 
       {/* Vision & Mission */}
       <section 
-        className="section-padding bg-light"
+        className="section-padding bg-gray-200"
       >
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -81,7 +81,7 @@ const About = () => {
       </section>
 
       {/* Manufacturing Capabilities */}
-      <section className="relative section-padding overflow-hidden">
+      <section className="relative section-padding overflow-hidden bg-gray-800">
         <video
           autoPlay
           loop
@@ -92,12 +92,12 @@ const About = () => {
         >
           <source src="/videos/warehouse-workers.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-white/80" />
+        <div className="absolute inset-0 bg-gray-800/80" />
         
         <div className="relative z-10 container mx-auto px-4">
           <div className="text-center mb-16 scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Our Manufacturing <span className="text-primary">Capabilities</span>
+              Our Manufacturing <span className="text-gray-300">Capabilities</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Our state-of-the-art facility is equipped to handle large-scale production while maintaining the highest quality standards.
@@ -106,15 +106,15 @@ const About = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              'ISO 9001:2015 Certified',
-              'Large Production Capacity',
-              'OEM & Custom Solutions',
-              'Advanced Quality Control',
-              'Global Export Logistics',
-              'Skilled Engineering Team'
+              { text: 'ISO 9001:2015 Certified' },
+              { text: 'Large Production Capacity' },
+              { text: 'OEM & Custom Solutions' },
+              { text: 'Advanced Quality Control' },
+              { text: 'Global Export Logistics' },
+              { text: 'Skilled Engineering Team' }
             ].map((tag, index) => (
-              <div key={index} className="fade-in-up bg-white/90 backdrop-blur-sm p-4 rounded-xl text-center shadow-lg lift-hover">
-                <p className="font-semibold text-gray-800">{tag}</p>
+              <div key={index} className="fade-in-up bg-gray-300/90 backdrop-blur-sm p-4 rounded-xl text-center shadow-lg lift-hover">
+                <p className="font-semibold text-gray-800">{tag.text}</p>
               </div>
             ))}
           </div>
@@ -123,12 +123,12 @@ const About = () => {
 
       {/* Why Choose Us */}
       <section 
-        className="section-padding bg-white"
+        className="section-padding bg-gray-300"
       >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 scale-in">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Why Choose <span className="text-primary">Us?</span>
+              Why Choose <span className="text-blue-800">Us?</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Your reliable partner for quality, expertise, and custom solutions.
@@ -159,7 +159,7 @@ const About = () => {
 
       {/* Call to Action */}
       <section 
-        className="section-padding bg-light"
+        className="section-padding bg-gray-200"
       >
         <div className="container mx-auto px-4 text-center">
           <div className="scale-in max-w-3xl mx-auto">

@@ -46,13 +46,13 @@ const Contact = () => {
       {/* Hero Banner */}
       <HeroBanner
         backgroundImage="/images/footer-bg.jpg"
-        title="<span class='text-primary'>Contact</span> Us"
+        title="<span class='text-gray-300'>Contact</span> Us"
         subtitle="We're here to help with your polymer needs. Whether you have a question about our products, need a custom quote, or want to discuss a project, please get in touch."
       />
 
       {/* Main Content */}
       <section 
-        className="section-padding bg-white"
+        className="section-padding bg-gray-300"
       >
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
@@ -81,7 +81,7 @@ const Contact = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Form */}
             <div className="slide-in-left">
-              <div className="bg-white p-8 rounded-2xl shadow-lg">
+              <div className="bg-gray-300 p-8 rounded-2xl shadow-lg">
                 <h2 className="text-2xl font-bold mb-6">Get In Touch</h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>
@@ -92,7 +92,7 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 border border-gray-400 rounded-lg focus:ring-2 focus:ring-blue-800 focus:border-transparent transition-colors bg-gray-200"
                     />
                   </div>
                   
@@ -104,7 +104,7 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 border border-gray-400 rounded-lg focus:ring-2 focus:ring-blue-800 focus:border-transparent transition-colors bg-gray-200"
                     />
                   </div>
                   
@@ -116,7 +116,7 @@ const Contact = () => {
                       value={formData.subject}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors"
+                      className="w-full px-4 py-3 border border-gray-400 rounded-lg focus:ring-2 focus:ring-blue-800 focus:border-transparent transition-colors bg-gray-200"
                     />
                   </div>
                   
@@ -128,7 +128,7 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent transition-colors resize-vertical"
+                      className="w-full px-4 py-3 border border-gray-400 rounded-lg focus:ring-2 focus:ring-blue-800 focus:border-transparent transition-colors resize-vertical bg-gray-200"
                     ></textarea>
                   </div>
                   
@@ -162,9 +162,9 @@ const Contact = () => {
                 </div>
 
                 {/* Address */}
-                <div className="bg-white p-6 rounded-xl shadow-lg mb-6">
+                <div className="bg-gray-300 p-6 rounded-xl shadow-lg mb-6">
                   <div className="flex items-start space-x-4">
-                    <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
+                    <MapPin className="h-6 w-6 text-blue-800 flex-shrink-0 mt-1" />
                     <div>
                       <h3 className="font-semibold mb-2">Millat Polymer Industries</h3>
                       <p className="text-gray-600">
@@ -179,10 +179,10 @@ const Contact = () => {
                 <div className="space-y-4">
                   <a
                     href="tel:+923008474507"
-                    className="flex items-center space-x-4 p-4 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+                    className="flex items-center space-x-4 p-4 bg-gray-300 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
                   >
-                    <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center">
-                      <Phone className="h-6 w-6 text-primary" />
+                    <div className="bg-blue-800/10 w-12 h-12 rounded-xl flex items-center justify-center">
+                      <Phone className="h-6 w-6 text-blue-800" />
                     </div>
                     <div>
                       <h3 className="font-semibold">Phone</h3>
@@ -192,10 +192,10 @@ const Contact = () => {
 
                   <a
                     href="mailto:millatpolymer@gmail.com"
-                    className="flex items-center space-x-4 p-4 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+                    className="flex items-center space-x-4 p-4 bg-gray-300 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
                   >
-                    <div className="bg-secondary/10 w-12 h-12 rounded-xl flex items-center justify-center">
-                      <Mail className="h-6 w-6 text-secondary" />
+                    <div className="bg-gray-500/10 w-12 h-12 rounded-xl flex items-center justify-center">
+                      <Mail className="h-6 w-6 text-gray-600" />
                     </div>
                     <div>
                       <h3 className="font-semibold">Email</h3>
@@ -207,10 +207,10 @@ const Contact = () => {
                     href="https://wa.me/923008474507"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-4 p-4 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+                    className="flex items-center space-x-4 p-4 bg-gray-300 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
                   >
-                    <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center">
-                      <MessageCircle className="h-6 w-6 text-primary" />
+                    <div className="bg-blue-800/10 w-12 h-12 rounded-xl flex items-center justify-center">
+                      <MessageCircle className="h-6 w-6 text-blue-800" />
                     </div>
                     <div>
                       <h3 className="font-semibold">WhatsApp</h3>
@@ -225,7 +225,7 @@ const Contact = () => {
                     href="https://www.facebook.com/millatpolymer"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+                    className="p-3 bg-gray-300 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
                   >
                     <Facebook className="h-6 w-6 text-blue-600" />
                   </a>
@@ -233,7 +233,7 @@ const Contact = () => {
                     href="https://www.linkedin.com/company/millat-polymer"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow"
+                    className="p-3 bg-gray-300 rounded-xl shadow-lg hover:shadow-xl transition-shadow"
                   >
                     <Linkedin className="h-6 w-6 text-blue-700" />
                   </a>

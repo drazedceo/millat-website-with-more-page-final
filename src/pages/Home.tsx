@@ -23,7 +23,7 @@ const Home = () => {
       {/* Hero Section */}
       <HeroBanner
         videoUrl="/videos/hero-manufacturing.mp4"
-        title="Leading Manufacturer of <br />High-Quality <span class='text-primary'>Rubber</span><br /> & <span class='text-primary'>Plastic Components</span>"
+        title="Leading Manufacturer of <br />High-Quality <span class='text-gray-300'>Rubber</span><br /> & <span class='text-gray-300'>Plastic Components</span>"
         subtitle=""
       >
         <div className="mb-8">
@@ -42,12 +42,12 @@ const Home = () => {
 
       {/* Company Overview */}
       <section 
-        className="section-padding bg-white"
+        className="section-padding bg-gray-300"
       >
         <div className="container mx-auto px-4">
           <div className="text-center max-w-5xl mx-auto fade-in-up">
             <h2 className="text-3xl lg:text-4xl font-bold mb-8">
-              Welcome to <span className="text-primary">Millat Polymer & Rubber</span>
+              Welcome to <span className="text-blue-800">Millat Polymer & Rubber</span>
             </h2>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
               MILLAT POLYMER & RUBBER (Pvt) Ltd, founded in 2012, is one of the leading manufacturing organization in Pakistan, has made quantum leaps to achieve excellence in the field of Plastic, Rubber and Rubber to metal bonded Automotive & Industrial Spare Parts. The company, under the visionary leadership of its Chairman Sheikh Abid Ali and a team of dedicated professionals has achieved major land marks and established strong foot holds in the domestic as well as foreign Export markets with a special focus on the Netherlands, UAE, Australia and European applications. Millat is catering to a world-wide client base and has an impressive list of customers both in the OEMs & After Market segments.
@@ -62,12 +62,12 @@ const Home = () => {
 
       {/* Why Choose Us */}
       <section 
-        className="section-padding bg-light"
+        className="section-padding bg-gray-200"
       >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 fade-in-up">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Why Choose <span className="text-primary">Us?</span>
+              Why Choose <span className="text-blue-800">Us?</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Your reliable partner for quality, expertise, and custom solutions.
@@ -76,8 +76,8 @@ const Home = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             <Card title="Uncompromising Quality" className="slide-in-left lift-hover">
-              <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                <Award className="h-8 w-8 text-primary" />
+              <div className="bg-blue-800/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                <Award className="h-8 w-8 text-blue-800" />
               </div>
               <p className="text-gray-600">
                 Our products are manufactured under strict ISO 9001:2015 certified processes.
@@ -85,8 +85,8 @@ const Home = () => {
             </Card>
 
             <Card title="Export Expertise" className="scale-in lift-hover">
-              <div className="bg-secondary/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                <Globe className="h-8 w-8 text-secondary" />
+              <div className="bg-gray-500/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                <Globe className="h-8 w-8 text-gray-600" />
               </div>
               <p className="text-gray-600">
                 We have a proven track record of meeting the demands of international markets.
@@ -94,8 +94,8 @@ const Home = () => {
             </Card>
 
             <Card title="Custom Manufacturing" className="slide-in-right lift-hover">
-              <div className="bg-primary/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                <Users className="h-8 w-8 text-primary" />
+              <div className="bg-blue-800/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                <Users className="h-8 w-8 text-blue-800" />
               </div>
               <p className="text-gray-600">
                 We partner with you to create custom OEM solutions tailored to your needs.
@@ -107,12 +107,12 @@ const Home = () => {
 
       {/* Product Categories */}
       <section 
-        className="section-padding bg-white"
+        className="section-padding bg-gray-300"
       >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 fade-in-up">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Our Product <span className="text-primary">Categories</span>
+              Our Product <span className="text-blue-800">Categories</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Explore our main product lines, engineered for performance and durability across multiple industries.
@@ -171,11 +171,11 @@ const Home = () => {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
+                  <h3 className="text-xl font-semibold mb-3 group-hover:text-blue-800 transition-colors">
                     {category.title}
                   </h3>
                   <p className="text-gray-600 mb-4">{category.description}</p>
-                  <div className="flex items-center text-primary font-medium">
+                  <div className="flex items-center text-blue-800 font-medium">
                     <span>View Category</span>
                     <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-2 transition-transform" />
                   </div>
@@ -195,12 +195,12 @@ const Home = () => {
 
       {/* Industries We Serve */}
       <section 
-        className="section-padding bg-light"
+        className="section-padding bg-gray-200"
       >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 fade-in-up">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Industries We <span className="text-primary">Serve</span>
+              Industries We <span className="text-blue-800">Serve</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We provide versatile and reliable polymer solutions for a wide range of sectors, meeting diverse industrial demands with precision and expertise.
@@ -218,7 +218,7 @@ const Home = () => {
               { name: 'Aerospace', icon: '✈️', description: 'High-performance seals, vibration dampers' },
               { name: 'Energy', icon: '⚡', description: 'Insulation components, power system seals' }
             ].map((industry, index) => (
-              <div key={index} className={`${index % 4 === 0 ? 'slide-in-left' : index % 4 === 1 ? 'scale-in' : index % 4 === 2 ? 'slide-in-right' : 'scale-in'} bg-white p-6 rounded-xl text-center shadow-lg hover:shadow-xl transition-all duration-300 lift-hover`}>
+              <div key={index} className={`${index % 4 === 0 ? 'slide-in-left' : index % 4 === 1 ? 'scale-in' : index % 4 === 2 ? 'slide-in-right' : 'scale-in'} bg-gray-300 p-6 rounded-xl text-center shadow-lg hover:shadow-xl transition-all duration-300 lift-hover`}>
                 <div className="text-4xl mb-3">{industry.icon}</div>
                 <h3 className="font-semibold text-gray-800">{industry.name}</h3>
                 <p className="text-sm text-gray-600">{industry.description}</p>
@@ -251,7 +251,7 @@ const Home = () => {
         <div className="relative z-10 container mx-auto px-4 text-white">
           <div className="text-center mb-16 fade-in-up">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-              Advanced Manufacturing <span className="text-primary">Capabilities</span>
+              Advanced Manufacturing <span className="text-gray-300">Capabilities</span>
             </h2>
             <p className="text-xl max-w-3xl mx-auto opacity-90">
               Our state-of-the-art facility is equipped for precision, quality, and scale.
@@ -259,15 +259,15 @@ const Home = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="slide-in-left bg-white/10 backdrop-blur-sm p-6 rounded-xl lift-hover">
+            <div className="slide-in-left bg-gray-300/10 backdrop-blur-sm p-6 rounded-xl lift-hover">
               <h3 className="text-xl font-semibold mb-3">In-House Mold & Tooling</h3>
               <p className="opacity-90">Complete tooling capabilities for rapid prototyping and production.</p>
             </div>
-            <div className="scale-in bg-white/10 backdrop-blur-sm p-6 rounded-xl lift-hover">
+            <div className="scale-in bg-gray-300/10 backdrop-blur-sm p-6 rounded-xl lift-hover">
               <h3 className="text-xl font-semibold mb-3">Diverse Material Expertise</h3>
               <p className="opacity-90">Working with EPDM, silicone, NBR, and various thermoplastics.</p>
             </div>
-            <div className="slide-in-right bg-white/10 backdrop-blur-sm p-6 rounded-xl lift-hover">
+            <div className="slide-in-right bg-gray-300/10 backdrop-blur-sm p-6 rounded-xl lift-hover">
               <h3 className="text-xl font-semibold mb-3">OEM Customization</h3>
               <p className="opacity-90">Tailored solutions meeting exact OEM specifications.</p>
             </div>
@@ -284,13 +284,13 @@ const Home = () => {
 
       {/* Commitment to Quality */}
       <section 
-        className="section-padding bg-white"
+        className="section-padding bg-gray-300"
       >
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="slide-in-left">
               <h2 className="text-3xl lg:text-4xl font-bold mb-6">
-                Driven by Precision, <span className="text-primary">Certified by Excellence</span>
+                Driven by Precision, <span className="text-blue-800">Certified by Excellence</span>
               </h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
                 At Millat Polymer & Rubber, quality isn't just a standard – it's our foundation. Every product undergoes rigorous inspection, adhering to international benchmarks and client-specific tolerances.
@@ -312,7 +312,7 @@ const Home = () => {
       </section>
 
       {/* Contact Teaser */}
-      <section className="section-padding bg-millat-teal text-white">
+      <section className="section-padding bg-blue-800 text-gray-300">
         <div className="container mx-auto px-4 text-center">
           <div className="scale-in max-w-3xl mx-auto">
             <h2 className="text-3xl lg:text-4xl font-bold mb-6">
@@ -321,7 +321,7 @@ const Home = () => {
             <p className="text-xl mb-8 opacity-90">
               We specialize in custom parts designed to your exact specifications.
             </p>
-            <Link to="/contact" className="bg-white text-primary hover:bg-gray-50 px-8 py-4 rounded-lg font-semibold transition-colors">
+            <Link to="/contact" className="bg-gray-300 text-blue-800 hover:bg-gray-200 px-8 py-4 rounded-lg font-semibold transition-colors">
               Get In Touch
             </Link>
           </div>

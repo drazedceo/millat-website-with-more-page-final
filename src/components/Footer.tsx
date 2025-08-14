@@ -7,19 +7,19 @@ const Footer = () => {
 
   return (
     <footer 
-      className="relative text-black overflow-hidden"
+      className="relative text-gray-800 overflow-hidden"
       style={{
         backgroundImage: 'url(https://i.postimg.cc/SQWBn4yB/Untitled.png)',
         backgroundSize: 'cover',
         backgroundPosition: 'center'
       }}
     >
-      <div className="absolute inset-0 bg-white/80 z-10" />
+      <div className="absolute inset-0 bg-gray-300/80 z-10" />
       <div className="relative z-20 container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-primary">Millat Polymer</h3>
+            <h3 className="text-xl font-bold text-blue-800">Millat Polymer</h3>
             <p className="text-gray-700 text-sm leading-relaxed">
               Pioneering high-performance polymer solutions for various industries worldwide.
             </p>
@@ -28,7 +28,7 @@ const Footer = () => {
                 href="https://www.facebook.com/millatpolymer"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-gray-200 rounded-lg hover:bg-primary hover:text-white transition-colors"
+                className="p-2 bg-gray-400 rounded-lg hover:bg-blue-800 hover:text-gray-300 transition-colors"
               >
                 <Facebook className="h-5 w-5" />
               </a>
@@ -36,7 +36,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/company/millat-polymer"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 bg-gray-200 rounded-lg hover:bg-primary hover:text-white transition-colors"
+                className="p-2 bg-gray-400 rounded-lg hover:bg-blue-800 hover:text-gray-300 transition-colors"
               >
                 <Linkedin className="h-5 w-5" />
               </a>
@@ -47,16 +47,16 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Quick Links</h4>
             <nav className="space-y-2">
-              <Link to="/" className="block text-gray-700 hover:text-primary transition-colors text-sm">
+              <Link to="/" className="block text-gray-700 hover:text-blue-800 transition-colors text-sm">
                 Home
               </Link>
-              <Link to="/about" className="block text-gray-700 hover:text-primary transition-colors text-sm">
+              <Link to="/about" className="block text-gray-700 hover:text-blue-800 transition-colors text-sm">
                 About Us
               </Link>
-              <Link to="/products" className="block text-gray-700 hover:text-primary transition-colors text-sm">
+              <Link to="/products" className="block text-gray-700 hover:text-blue-800 transition-colors text-sm">
                 Products
               </Link>
-              <Link to="/contact" className="block text-gray-700 hover:text-primary transition-colors text-sm">
+              <Link to="/contact" className="block text-gray-700 hover:text-blue-800 transition-colors text-sm">
                 Contact
               </Link>
             </nav>
@@ -66,13 +66,13 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-lg font-semibold">Explore</h4>
             <nav className="space-y-2">
-              <Link to="/industries" className="block text-gray-700 hover:text-primary transition-colors text-sm">
+              <Link to="/industries" className="block text-gray-700 hover:text-blue-800 transition-colors text-sm">
                 Industries
               </Link>
-              <Link to="/manufacturing" className="block text-gray-700 hover:text-primary transition-colors text-sm">
+              <Link to="/manufacturing" className="block text-gray-700 hover:text-blue-800 transition-colors text-sm">
                 Manufacturing
               </Link>
-              <Link to="/certifications" className="block text-gray-700 hover:text-primary transition-colors text-sm">
+              <Link to="/certifications" className="block text-gray-700 hover:text-blue-800 transition-colors text-sm">
                 Certifications
               </Link>
             </nav>
@@ -84,14 +84,14 @@ const Footer = () => {
             <div className="space-y-3">
               <a
                 href="tel:+923008474507"
-                className="flex items-center space-x-3 text-gray-700 hover:text-primary transition-colors text-sm"
+                className="flex items-center space-x-3 text-gray-700 hover:text-blue-800 transition-colors text-sm"
               >
                 <Phone className="h-4 w-4" />
                 <span>+92 300 8474507</span>
               </a>
               <a
                 href="mailto:millatpolymer@gmail.com"
-                className="flex items-center space-x-3 text-gray-700 hover:text-primary transition-colors text-sm"
+                className="flex items-center space-x-3 text-gray-700 hover:text-blue-800 transition-colors text-sm"
               >
                 <Mail className="h-4 w-4" />
                 <span>millatpolymer@gmail.com</span>
@@ -100,7 +100,7 @@ const Footer = () => {
                 href="https://wa.me/923008474507"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-3 text-gray-700 hover:text-primary transition-colors text-sm"
+                className="flex items-center space-x-3 text-gray-700 hover:text-blue-800 transition-colors text-sm"
               >
                 <MessageCircle className="h-4 w-4" />
                 <span>Chat on WhatsApp</span>
